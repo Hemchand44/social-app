@@ -29,3 +29,13 @@ jobs:
       - name: Build Frontend
         working-directory: ./Frontend
         run: npm run build
+
+        
+
+      - name: Deploy to Vercel
+        working-directory: ./Frontend
+        run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+
+
+
+      
