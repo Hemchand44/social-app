@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy to Vercel
         working-directory: ./Frontend
-        run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }} --project-id=${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --project-id=${{ secrets.VERCEL_PROJECT_ID }}
 
 
 
